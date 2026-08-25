@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Roost</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="back">Roost</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 25 August 2026</p>
+
+  <p class="notice"><strong>Roost is in active development.</strong> As features are added or
+  removed, what Roost stores will change with them. This page is updated whenever that happens,
+  and the date above always tells you when it was last true.</p>
+
+  <p>Roost is a Discord application that provides support tickets, self-assignable roles,
+  giveaways and polls. This page explains exactly what data Roost stores, why it stores it,
+  and how you can have it deleted.</p>
+
+  <p>We collect as little as possible. Everything listed below exists because a feature
+  cannot work without it.</p>
+
+  <h2>1. Who is responsible</h2>
+  <p>Roost is operated by an individual developer, not a company. For anything in this
+  document, including data deletion requests, contact us at
+  <a href="mailto:tonixbusiness.ro@gmail.com">tonixbusiness.ro@gmail.com</a> or through our support server.</p>
+
+  <h2>2. What we store</h2>
+
+  <h3>Identifiers</h3>
+  <ul>
+    <li><strong>Your Discord user ID</strong> — a number, not your name or email. Stored when
+    you open a ticket, claim a role, enter a giveaway, or vote in a poll.</li>
+    <li><strong>Server (guild) IDs</strong> of servers Roost has been added to.</li>
+    <li><strong>Channel and role IDs</strong> that a server administrator configures during
+    setup, so Roost knows where to post and who counts as staff.</li>
+  </ul>
+
+  <h3>Support tickets</h3>
+  <ul>
+    <li>Who opened the ticket, which category it was opened in, and when.</li>
+    <li><strong>The messages sent inside that ticket channel</strong>, saved as a transcript
+    when the ticket is closed, so the server's staff keep a record of what was discussed.</li>
+    <li>Files attached inside the ticket, re-uploaded alongside the transcript.</li>
+    <li>Whether a user has been blocked from opening further tickets on that server, and why.</li>
+  </ul>
+
+  <h3>Giveaways and polls</h3>
+  <ul>
+    <li>Which users entered a giveaway, and which users won, so entries cannot be duplicated
+    and a winner can be re-rolled.</li>
+    <li>Which option a user voted for in a poll, so the same person cannot vote twice.</li>
+  </ul>
+
+  <h3>Roles</h3>
+  <ul>
+    <li>Which self-assignable roles you selected, so the menu can show your current choice.</li>
+  </ul>
+
+  <p>Timestamps are stored alongside all of the above.</p>
+
+  <h2>3. Message content, stated plainly</h2>
+  <p>Roost uses the <code>MESSAGE_CONTENT</code> privileged intent. It is used for exactly one
+  purpose: <strong>building the transcript of a support ticket</strong>.</p>
+  <p>Concretely, this means:</p>
+  <ul>
+    <li>Roost reads messages <strong>inside ticket channels only</strong>, and only when a
+    ticket is closed.</li>
+    <li>Roost does <strong>not</strong> read, log, or store messages from your server's normal
+    channels.</li>
+    <li>Roost does <strong>not</strong> read or store direct messages.</li>
+    <li>Roost does not analyse message content for any purpose other than writing it into the
+    transcript that the server's own staff receive.</li>
+  </ul>
+
+  <h2>4. What we do not do</h2>
+  <ul>
+    <li>We do not sell, rent or trade your data. Not to anyone, ever.</li>
+    <li>We do not use your data for advertising or profiling.</li>
+    <li>We do not track you across servers.</li>
+    <li>We do not store your email address, phone number, IP address or payment details,
+    because Roost never asks for them.</li>
+    <li>We do not use third-party analytics inside the bot.</li>
+  </ul>
+
+  <h2>5. Who can see your data</h2>
+  <p>Ticket transcripts are posted to a channel chosen by the administrators of the server the
+  ticket was opened on, and are visible to that server's staff. That is the point of a
+  transcript, and it is worth knowing before you write something in a ticket.</p>
+  <p>Nobody outside that server receives your data. The developer can access the database for
+  maintenance and debugging, and for nothing else.</p>
+
+  <h2>6. How long we keep it</h2>
+  <ul>
+    <li><strong>Configuration data</strong> is kept while Roost is on the server.</li>
+    <li><strong>Ticket transcripts</strong> are kept until deleted by the server's staff or by
+    request.</li>
+    <li><strong>Giveaway and poll records</strong> are kept so past results stay verifiable.</li>
+    <li>If Roost is removed from a server, that server's data is marked inactive and deleted
+    after <strong>90 days</strong>, unless it is restored by adding Roost back before then.</li>
+  </ul>
+
+  <h2>7. Your rights and how to use them</h2>
+  <p>You can ask us, at any time, to:</p>
+  <ul>
+    <li>tell you what data we hold about you;</li>
+    <li>send you a copy of it;</li>
+    <li>correct it;</li>
+    <li>delete it.</li>
+  </ul>
+  <p>Write to <a href="mailto:tonixbusiness.ro@gmail.com">tonixbusiness.ro@gmail.com</a> from any address, or open a
+  ticket on our support server, and include your Discord user ID. We will answer within
+  <strong>30 days</strong>.</p>
+  <p>One limit worth stating honestly: if you ask us to delete a ticket transcript, we can
+  remove it from our database, but a copy may already sit in a message posted on the server
+  where the ticket was opened. Only that server's administrators can delete that copy. We will
+  tell you when this is the case.</p>
+
+  <h2>8. Children</h2>
+  <p>Discord requires users to be at least 13 years old, or older where local law demands it.
+  Roost is not intended for anyone below that age. If you believe a child's data has been
+  stored, contact us and we will delete it.</p>
+
+  <h2>9. Where data is stored</h2>
+  <p>Data is stored on servers located in the European Union. Roost is operated from Romania
+  and is subject to Romanian and European Union law, including the GDPR.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>Roost is being built, so this policy is not finished either. Every time a new feature
+  stores something that is not listed above, this page is updated before or at the same time as
+  that feature goes live.</p>
+  <p>When it changes, the date at the top changes with it, and anything significant, in
+  particular any new kind of data being collected, is announced on our support server.
+  Continuing to use Roost after a change means you accept the updated policy. If a change is
+  one you are not happy with, remove Roost from your server and ask us to delete your data.</p>
+
+  <h2>11. Contact</h2>
+  <p>Email <a href="mailto:tonixbusiness.ro@gmail.com">tonixbusiness.ro@gmail.com</a>, or join our support server. We
+  read everything.</p>
+
+  <footer>
+    <p><a href="terms.html">Terms of Service</a></p>
+    <p>Roost is not affiliated with Discord Inc.</p>
+  </footer>
+</main>
+</body>
+</html>
