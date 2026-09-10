@@ -7,21 +7,21 @@ These pages are served through GitHub Pages so they stay reachable at a stable p
 
 | Document | Link |
 |---|---|
-| Terms of Service | https://tonixulmagik.github.io/Roost/terms.html |
-| Privacy Policy | https://tonixulmagik.github.io/Roost/privacy.html |
+| Terms of Service | https://tonixulmagik.github.io/nettle/terms.html |
+| Privacy Policy | https://tonixulmagik.github.io/nettle/privacy.html |
 | Support server | https://discord.gg/nettle |
 
-> **Why the address still says `Roost`.** That is the repository name, and GitHub
-> Pages builds the URL from it. The bot was renamed to Nettle; the repository was
-> not. Both links above are live and serve the Nettle documents.
+> **These two links are the ones registered with Discord.** They must never 404.
 >
-> The `/nettle/` addresses written here before returned **404** and were never
-> reachable. Those are the ones that must never be given to Discord: a Terms of
-> Service link that 404s fails verification on the spot.
+> The repository was renamed from `Roost` to `nettle` on 10 September 2026, before
+> the URLs were submitted for App Verification. GitHub Pages builds the address
+> from the repository name, so the old `/Roost/` addresses stop being the canonical
+> ones. GitHub keeps a redirect from the old repository name, but a redirect is not
+> something to rely on for a legal document.
 >
-> If the repository is ever renamed to `nettle`, these two links change with it,
-> and the ones registered in the Developer Portal have to be updated in the same
-> hour. Doing that *after* verification is the risky moment, not before.
+> **Do not rename this repository again** without updating the Terms of Service and
+> Privacy Policy fields in the Discord Developer Portal in the same sitting. Doing
+> it after verification is the moment that breaks things, not before.
 
 ## What Nettle reads
 
