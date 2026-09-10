@@ -1,4 +1,4 @@
-/* Roost - stil comun pentru site, ToS si Privacy Policy */
+/* Nettle - stil comun pentru site, ToS si Privacy Policy */
 
 :root{
   --bg:#F7F5F0;
@@ -100,6 +100,9 @@ footer a{color:var(--muted)}
   font-size:52px;margin:0 auto 20px;
 }
 .hero p.tag{color:var(--muted);font-size:18px;max-width:44ch;margin:0 auto 26px}
+/* Anunt de limba: acelasi tipar ca .notice de pe paginile de politica, doar
+   centrat si ingustat ca sa stea in hero, deasupra butonului de instalare. */
+.hero p.notice{max-width:52ch;margin:0 auto 26px;text-align:left}
 
 .cta{display:flex;gap:11px;justify-content:center;flex-wrap:wrap}
 .btn{

@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Roost</title>
+<title>Privacy Policy — Nettle</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <p class="back">Roost</p>
+  <p class="back">Nettle</p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 25 August 2026</p>
+  <p class="meta">Last updated: 4 September 2026</p>
 
-  <p class="notice"><strong>Roost is in active development.</strong> As features are added or
-  removed, what Roost stores changes with them. This page is updated whenever that happens, and
+  <p class="notice"><strong>Nettle is in active development.</strong> As features are added or
+  removed, what Nettle stores changes with them. This page is updated whenever that happens, and
   the date above always tells you when it was last true.</p>
 
-  <p>Roost is a Discord application. This page explains exactly what data it stores, why it
+  <p>Nettle is a Discord application. This page explains exactly what data it stores, why it
   stores it, and how you can have it deleted.</p>
 
-  <p><strong>Not every feature runs on every server.</strong> Section 2 lists what Roost stores
+  <p><strong>Not every feature runs on every server.</strong> Section 2 lists what Nettle stores
   wherever it is added. Section 3 lists extra data that exists only on servers where the
   community and economy features are switched on, which today is a small number of servers the
   developer runs directly. If those features are not enabled where you are, none of the data in
@@ -29,7 +29,7 @@
   without it.</p>
 
   <h2>1. Who is responsible</h2>
-  <p>Roost is operated by an individual developer in Romania, not a company. For anything in
+  <p>Nettle is operated by an individual developer in Romania, not a company. For anything in
   this document, including data deletion requests, contact
   <a href="mailto:tonixbusiness.ro@gmail.com">tonixbusiness.ro@gmail.com</a> or use our support
   server.</p>
@@ -39,8 +39,8 @@
   <h3>Identifiers</h3>
   <ul>
     <li><strong>Your Discord user ID</strong> — a number, not your name or email.</li>
-    <li><strong>Server (guild) IDs</strong> of servers Roost has been added to.</li>
-    <li><strong>Channel and role IDs</strong> that a server administrator configures, so Roost
+    <li><strong>Server (guild) IDs</strong> of servers Nettle has been added to.</li>
+    <li><strong>Channel and role IDs</strong> that a server administrator configures, so Nettle
     knows where to post and who counts as staff.</li>
   </ul>
 
@@ -65,7 +65,7 @@
 
   <h2>3. Extra data, only where community features are enabled</h2>
 
-  <p>On servers running Roost's economy and community features, the following also exists.
+  <p>On servers running Nettle's economy and community features, the following also exists.
   All of it is per server: it is a game score, not a record about you as a person.</p>
 
   <h3>Game economy</h3>
@@ -83,7 +83,7 @@
     used for levels and leaderboards.</li>
     <li>Which channels you were active in, as counts.</li>
   </ul>
-  <p><strong>This stores numbers, not text.</strong> Roost checks that a message is long enough
+  <p><strong>This stores numbers, not text.</strong> Nettle checks that a message is long enough
   to count and then increments a counter. The message itself is never saved. See section 4.</p>
 
   <h3>Moderation records</h3>
@@ -94,30 +94,55 @@
     <li>If you are a staff member: your position and its change history.</li>
   </ul>
 
+  <h3>Forms you choose to fill in</h3>
+  <p>Some servers run an application form for staff positions or for a bot-testing programme.
+  These are entirely optional. If you submit one, we store <strong>the answers exactly as you
+  typed them</strong>, together with who reviewed it, the decision and the reason. Two things to
+  know before you fill one in:</p>
+  <ul>
+    <li>The staff application asks <strong>how old you are</strong>. If you answer, that answer
+    is stored as part of the form. Do not fill in the form if you would rather not tell us.</li>
+    <li>Bug reports in the testing programme store the text you write describing the problem.</li>
+  </ul>
+  <p>Form answers are visible to that server's staff who review applications. You can ask for
+  yours to be deleted at any time, as described in section 8.</p>
+
   <h3>Optional, only if you provide it</h3>
   <ul>
-    <li><strong>Your birthday, day and month only.</strong> Never the year, so your age is not
-    stored or inferable. You choose to give this; you can remove it at any time.</li>
+    <li><strong>Your birthday, day and month only.</strong> Never the year, so your age cannot be
+    worked out from it. You choose to give this; you can remove it at any time.</li>
     <li>Who invited you to the server and when you joined, used for invite counts.</li>
   </ul>
 
   <h2>4. Message content, stated plainly</h2>
-  <p>Roost uses the <code>MESSAGE_CONTENT</code> privileged intent. It is used for exactly two
-  things, and both are listed here:</p>
+  <p>Nettle uses the <code>MESSAGE_CONTENT</code> privileged intent. It is used for exactly three
+  things, and all three are listed here:</p>
   <ol>
     <li><strong>Ticket transcripts.</strong> When a ticket is closed, the messages inside that
     ticket channel are saved into a transcript for the server's staff. This is the only case
     where message text is stored.</li>
     <li><strong>Measuring message length for activity counting</strong>, on servers where that
-    feature is enabled. Roost checks whether a message is long enough to count towards your
+    feature is enabled. Nettle checks whether a message is long enough to count towards your
     level, then adds one to a counter. <strong>The text is read, evaluated and discarded. It is
     never written anywhere.</strong></li>
+    <li><strong>Replying when you mention the bot</strong>, on the developer's own server only.
+    If you write a message that mentions Nettle directly, the text of that message and the last
+    few messages of that channel are sent to <strong>Google's Gemini API</strong> to generate a
+    reply, which is then posted in the channel. This happens <strong>only</strong> when you
+    mention the bot on purpose, <strong>only</strong> on the single server the developer runs
+    directly, and <strong>never</strong> on any other server. Nothing sent this way is stored by
+    Nettle. Google processes it under
+    <a href="https://ai.google.dev/gemini-api/terms">their own terms</a>. If this feature is not
+    enabled where you are, none of your messages are ever sent anywhere.</li>
   </ol>
-  <p>Beyond those two:</p>
+  <p>Beyond those three:</p>
   <ul>
-    <li>Roost does <strong>not</strong> log or store messages from normal channels.</li>
-    <li>Roost does <strong>not</strong> read or store direct messages.</li>
-    <li>Roost does <strong>not</strong> analyse, profile or train anything on message content.</li>
+    <li>Nettle does <strong>not</strong> log or store messages from normal channels.</li>
+    <li>Nettle does <strong>not</strong> read direct messages, with one exception: the
+    developer's own DMs with the bot, read only so the developer can give it commands. Nobody
+    else's DMs are read, and none are stored.</li>
+    <li>Nettle does <strong>not</strong> profile you, and does <strong>not</strong> train any
+    model on your messages.</li>
   </ul>
 
   <h2>5. What we do not do</h2>
@@ -126,9 +151,9 @@
     <li>We do not use your data for advertising or profiling.</li>
     <li>We do not combine your data across unrelated servers to build a profile of you.</li>
     <li>We do not store your email address, phone number, IP address or payment details,
-    because Roost never asks for them.</li>
+    because Nettle never asks for them.</li>
     <li>We do not use third-party analytics inside the bot.</li>
-    <li>Nothing in Roost can be bought with real money, and nothing in it can be exchanged for
+    <li>Nothing in Nettle can be bought with real money, and nothing in it can be exchanged for
     real money.</li>
   </ul>
 
@@ -136,6 +161,10 @@
   <p>Ticket transcripts are posted to a channel chosen by that server's administrators and are
   visible to that server's staff. That is the point of a transcript, and it is worth knowing
   before you write something in a ticket.</p>
+  <p>One outside service is involved, and only for the feature described in section 4, point 3:
+  <strong>Google</strong> receives the text of messages that mention the bot, on the developer's
+  own server, in order to generate the reply. It receives nothing else, from no other server. No
+  other third party receives your data.</p>
   <p>Moderation records are visible to that server's staff. Leaderboards and profiles are
   visible to members of the server they belong to.</p>
   <p>Nobody outside a server receives that server's data. The developer can access the database
@@ -143,14 +172,16 @@
 
   <h2>7. How long we keep it</h2>
   <ul>
-    <li><strong>Configuration data</strong> is kept while Roost is on the server.</li>
+    <li><strong>Configuration data</strong> is kept while Nettle is on the server.</li>
     <li><strong>Ticket transcripts</strong> are kept until deleted by that server's staff or by
     request.</li>
-    <li><strong>Giveaway, poll, economy and moderation records</strong> are kept while Roost is
+    <li><strong>Giveaway, poll, economy and moderation records</strong> are kept while Nettle is
     on the server, so results and histories stay verifiable.</li>
-    <li>If Roost is removed from a server, that server's data is marked inactive and deleted
-    after <strong>90 days</strong>, unless Roost is added back before then.</li>
-    <li><strong>Your birthday</strong> is deleted as soon as you ask, with no waiting period.</li>
+    <li>If Nettle is removed from a server, that server's data stops being used, and we delete
+    it on request from anyone who administrated that server. Automatic deletion on a fixed
+    schedule is not in place yet; when it is, this page will say so and give the period.</li>
+    <li><strong>Your birthday</strong> is deleted when you ask, and we treat it as a priority
+    over the 30 day window in section 8.</li>
   </ul>
 
   <h2>8. Your rights and how to use them</h2>
@@ -162,7 +193,7 @@
     <li>delete it.</li>
   </ul>
   <p>Write to <a href="mailto:tonixbusiness.ro@gmail.com">tonixbusiness.ro@gmail.com</a> from
-  any address, or open a ticket on our support server, and include your Discord user ID. We will
+  any address, or open a ticket on our <a href="https://discord.gg/nettle">support server</a>, and include your Discord user ID. We will
   answer within <strong>30 days</strong>.</p>
   <p>Two limits worth stating honestly:</p>
   <ul>
@@ -170,35 +201,35 @@
     copy may already sit in a message posted on the server where the ticket was opened. Only
     that server's administrators can delete that copy. We will tell you when this is the case.</li>
     <li>A server's staff may keep their own moderation records of sanctions issued to you, as
-    servers are entitled to do. Deleting your data from Roost does not erase a server's own
+    servers are entitled to do. Deleting your data from Nettle does not erase a server's own
     record of a decision it made.</li>
   </ul>
 
   <h2>9. Children</h2>
   <p>Discord requires users to be at least 13 years old, or older where local law demands it.
-  Roost is not intended for anyone below that age. If you believe a child's data has been
+  Nettle is not intended for anyone below that age. If you believe a child's data has been
   stored, contact us and we will delete it.</p>
 
   <h2>10. Where data is stored</h2>
-  <p>Data is stored on servers located in the European Union. Roost is operated from Romania and
+  <p>Data is stored on servers located in the European Union. Nettle is operated from Romania and
   is subject to Romanian and European Union law, including the GDPR.</p>
 
   <h2>11. Changes to this policy</h2>
-  <p>Roost is being built, so this policy is not finished either. Every time a new feature stores
+  <p>Nettle is being built, so this policy is not finished either. Every time a new feature stores
   something that is not listed above, this page is updated before or at the same time as that
   feature goes live.</p>
   <p>When it changes, the date at the top changes with it, and anything significant, in
-  particular any new kind of data being collected, is announced on our support server.
-  Continuing to use Roost after a change means you accept the updated policy. If a change is one
-  you are not happy with, remove Roost from your server and ask us to delete your data.</p>
+  particular any new kind of data being collected, is announced on our <a href="https://discord.gg/nettle">support server</a>.
+  Continuing to use Nettle after a change means you accept the updated policy. If a change is one
+  you are not happy with, remove Nettle from your server and ask us to delete your data.</p>
 
   <h2>12. Contact</h2>
   <p>Email <a href="mailto:tonixbusiness.ro@gmail.com">tonixbusiness.ro@gmail.com</a>, or join
-  our support server. We read everything.</p>
+  our <a href="https://discord.gg/nettle">support server</a>. We read everything.</p>
 
   <footer>
     <p><a href="terms.html">Terms of Service</a></p>
-    <p>Roost is not affiliated with Discord Inc.</p>
+    <p>Nettle is not affiliated with Discord Inc.</p>
   </footer>
 </main>
 </body>
